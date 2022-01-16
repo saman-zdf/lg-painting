@@ -1,7 +1,7 @@
 import React from 'react';
-
+import './topbar.scss';
 const Topbar = () => {
-  return <div></div>;
+  return <div className='topbar'></div>;
 };
 
 export default Topbar;
