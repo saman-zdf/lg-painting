@@ -1,5 +1,5 @@
 import React from 'react';
-import './portfolio.scss'
+import './portfolio.scss';
 const Portfolio = () => {
   return <div className='portfolio'></div>;
 };
