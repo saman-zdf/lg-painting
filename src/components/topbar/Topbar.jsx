@@ -15,7 +15,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </div>
           <div className='itemContainer'>
             <i class='fas fa-envelope icon'></i>
-            <span>lgpaintingservices@gmial.com</span>
+            <span>lgpaintingservices@gmail.com</span>
           </div>
         </div>
         <div className='right'>
