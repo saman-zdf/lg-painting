@@ -1,6 +1,6 @@
 @import '../../global.scss';
 .contact {
-  background-color: #fff;
+  background-color: $blueColor;
   display: flex;
   @include mobile {
     flex-direction: column;
@@ -24,6 +24,7 @@
       }
     }
     .itemContainer {
+      color: #fff;
       margin: 20px 0;
 
       i {
@@ -34,12 +35,12 @@
         font-size: 30px;
       }
       .phone {
-        color: #666;
+        color: #fff;
         text-decoration: none;
         transition: all 0.5s ease;
         font-size: 25px;
         &:hover {
-          color: $blueColor;
+          color: rgb(153, 153, 255);
         }
       }
     }
@@ -84,8 +85,8 @@
       button {
         width: 150px;
         height: 30px;
-        color: whitesmoke;
-        background-color: $blueColor;
+        color: #555;
+        background-color: #fff;
         border: none;
         font-size: 15px;
         border-radius: 10px;
@@ -95,7 +96,7 @@
         }
       }
       span {
-        color: $blueColor;
+        color: #fff;
       }
     }
   }

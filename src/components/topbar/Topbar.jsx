@@ -10,8 +10,10 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
             LG Painting
           </a>
           <div className='itemContainer'>
-            <i class='fas fa-user icon'></i>
-            <span>+61423555666</span>
+            <i class='fas fa-phone-alt'></i>
+            <a href='tel:+61416608482' className='phone'>
+              0416608482
+            </a>
           </div>
           <div className='itemContainer'>
             <i class='fas fa-envelope icon'></i>
