@@ -1,3 +1,101 @@
+@import '../../global.scss';
 .works {
-  background-color: lightgreen;
+  background-color: $blueColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    &.left {
+      left: 200px;
+      transform: rotateY(180deg);
+    }
+    &.right {
+      right: 200px;
+    }
+  }
+
+  .slider {
+    height: 450px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .item {
+        width: 900px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+          flex: 6;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            height: 100%;
+            width: 100%;
+            .imgContainer {
+              height: 100%;
+              width: 100%;
+              position: relative;
+              h3 {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+              }
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .right {
+          flex: 6;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .rightContainer {
+            height: 100%;
+            width: 100%;
+            .imgContainer {
+              height: 100%;
+              width: 100%;
+              position: relative;
+              h3 {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+              }
+              img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
