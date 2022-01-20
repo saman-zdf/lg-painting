@@ -5,7 +5,17 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
+  height: 100vh;
+  h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 40px auto;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
   .arrow {
     height: 50px;
     position: absolute;
@@ -25,6 +35,7 @@
   .slider {
     height: 450px;
     display: flex;
+
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
@@ -33,6 +44,7 @@
       flex-direction: column;
       justify-content: center;
     }
+
     .container {
       width: 100vw;
       display: flex;

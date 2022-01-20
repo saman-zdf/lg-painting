@@ -1,5 +1,6 @@
 import React from 'react';
 import './menu.scss';
+import { Link } from 'react-scroll';
 const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={'menu ' + (menuOpen && 'active')}>

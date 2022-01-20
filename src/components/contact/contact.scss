@@ -2,6 +2,7 @@
 .contact {
   background-color: $blueColor;
   display: flex;
+  height: 100vh;
   @include mobile {
     flex-direction: column;
     justify-content: space-around;
