@@ -33,13 +33,13 @@ const Works = () => {
       afterImg: colors,
     },
   ];
-  useEffect(() => {
-    const timeout = setTimeout(
-      () => setCurrentSlide((currentSlide + 1 + data.length) % data.length),
-      5000
-    );
-    return () => clearTimeout(timeout);
-  }, [currentSlide, data.length]);
+  // useEffect(() => {
+  //   const timeout = setTimeout(
+  //     () => setCurrentSlide((currentSlide + 1 + data.length) % data.length),
+  //     5000
+  //   );
+  //   return () => clearTimeout(timeout);
+  // }, [currentSlide, data.length]);
 
   const handleClick = (way) => {
     way === 'left'

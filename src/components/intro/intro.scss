@@ -2,8 +2,11 @@
 .intro {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url('../../assets/images/bg-1.jpg');
-  // background-position: center;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
   background-repeat: no-repeat;
   display: flex;
   .left {
@@ -24,6 +27,9 @@
         width: 100%;
         display: block;
       }
+      @include mobile {
+        width: 70%;
+      }
     }
   }
   .right {
@@ -37,18 +43,31 @@
       flex-direction: column;
       justify-content: center;
       color: #fff;
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 45px;
+        @include mobile {
+          font-size: 35px;
+        }
       }
       h3 {
         font-size: 30px;
         span {
           font-size: inherit;
           color: rgb(0, 214, 218);
+        }
+        @include mobile {
+          font-size: 20px;
         }
         .ityped-cursor {
           animation: blink 1s infinite;

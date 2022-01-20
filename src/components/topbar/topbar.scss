@@ -24,6 +24,9 @@
         margin-right: 40px;
       }
       .itemContainer {
+        @include mobile {
+          display: none;
+        }
         display: flex;
         align-items: center;
         margin-right: 20px;
