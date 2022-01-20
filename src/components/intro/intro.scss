@@ -1,6 +1,10 @@
 @import '../../global.scss';
 .intro {
-  background-color: #fff;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url('../../assets/images/bg-1.jpg');
+  // background-position: center;
+
+  background-repeat: no-repeat;
   display: flex;
   .left {
     flex: 0.5;
@@ -32,6 +36,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      color: #fff;
       h1 {
         font-size: 60px;
         margin: 10px 0;
@@ -43,7 +48,7 @@
         font-size: 30px;
         span {
           font-size: inherit;
-          color: $blueColor;
+          color: rgb(0, 214, 218);
         }
         .ityped-cursor {
           animation: blink 1s infinite;
