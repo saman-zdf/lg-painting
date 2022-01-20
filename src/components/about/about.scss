@@ -1,0 +1,76 @@
+@import '../../global.scss';
+.about {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('../../assets/images/about-bg.jpg');
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+
+    .about-card.bg {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background-color: rgba(0, 0, 0, 0.1);
+      @include mobile {
+        display: none;
+      }
+    }
+    .about-card {
+      width: 60%;
+      height: 70vh;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      @include mobile {
+        width: 50%;
+        height: 40vh;
+      }
+    }
+
+    .about-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .about-right {
+    flex: 1;
+    @include mobile {
+      text-align: center;
+    }
+    .about-title {
+      font-weight: 500;
+      font-size: 40px;
+      margin-bottom: 25px;
+      color: #fff;
+      @include mobile {
+        margin-top: 2px;
+      }
+    }
+    .about-sub {
+      margin: 20px 0;
+    }
+
+    .about-desc {
+      max-width: 600px;
+      font-size: 20px;
+      line-height: 1.3;
+      color: #fff;
+      @include mobile {
+        max-width: 400px;
+        font-size: 18px;
+      }
+    }
+  }
+}
