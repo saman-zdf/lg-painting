@@ -22,6 +22,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    @include mobile {
+      height: 100vh;
+    }
 
     .card {
       width: 250px;
