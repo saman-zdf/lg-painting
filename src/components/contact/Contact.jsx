@@ -12,13 +12,27 @@ const Contact = () => {
       setMessage(false);
     }, 5000);
     return () => {
-      clearTimeout(timer)
-    }
+      clearTimeout(timer);
+    };
   }, [message]);
   return (
     <div className='contact' id='contact'>
       <div className='left'>
-        <img src={shake} alt='' />
+        <div className='imgContainer'>
+          <img src={shake} alt='' />
+        </div>
+        <div className='itemContainer'>
+          <i class='fas fa-envelope icon'></i>
+          <span>lgpaintingservices@gmail.com</span>
+        </div>
+        <div className='itemContainer'>
+          <i class='fas fa-phone-alt'></i>
+          <span>
+            <a href='tel:+61416608482' className='phone'>
+              +61416608482 Click Here To Call
+            </a>
+          </span>
+        </div>
       </div>
       <div className='right'>
         <h2>Contact Me</h2>
