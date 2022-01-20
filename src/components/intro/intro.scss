@@ -28,7 +28,7 @@
       justify-content: flex-start;
 
       img {
-        width: 100%;
+        width: 80%;
         display: block;
       }
       @include mobile {
@@ -52,20 +52,22 @@
         align-items: center;
       }
       h1 {
-        font-size: 60px;
+        font-size: 45px;
         margin: 10px 0;
         @include mobile {
           font-size: 40px;
+          text-align: center;
+          margin: 10px auto;
         }
       }
       h2 {
-        font-size: 45px;
+        font-size: 35px;
         @include mobile {
           font-size: 35px;
         }
       }
       h3 {
-        font-size: 30px;
+        font-size: 25px;
         span {
           font-size: inherit;
           color: rgb(0, 214, 218);
