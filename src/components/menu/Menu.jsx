@@ -25,7 +25,10 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       </ul>
       <div className='socials'>
         <div>
-          <a href='#'>
+          <a
+            href='https://www.instagram.com/lg.painting.services'
+            target='_blank'
+          >
             <i class='fab fa-instagram'></i>
           </a>
         </div>
