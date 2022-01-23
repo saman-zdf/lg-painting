@@ -1,6 +1,8 @@
 @import '../../global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 .topbar {
   width: 100%;
+  font-family: 'Poppins', sans-serif;
   height: 70px;
   background-color: #fff;
   color: $mainColor;
@@ -24,20 +26,21 @@
         margin-right: 40px;
         display: flex;
         align-items: center;
+        font-family: 'Kaushan Script', cursive;
       }
       .itemContainer {
         @include mobile {
           display: none;
         }
         i {
-          font-size: 30px;
+          font-size: 20px;
           margin-right: 5px;
         }
         .phone {
-          color: #666;
+          color: $mainColor;
           text-decoration: none;
           transition: all 0.5s ease;
-          font-size: 25px;
+          font-size: 20px;
           &:hover {
             color: $blueColor;
           }
@@ -59,7 +62,7 @@
     .right {
       .hamburger {
         width: 32px;
-        height: 25px;
+        height: 27px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

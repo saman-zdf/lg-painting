@@ -11,7 +11,11 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </a>
           <div className='itemContainer'>
             <i className='fas fa-phone-alt'></i>
-            <a href='tel:+61416608482' className='phone'>
+            <a
+              href='tel:+61416608482'
+              className='phone'
+              style={{ color: menuOpen && 'white' }}
+            >
               0416608482
             </a>
           </div>

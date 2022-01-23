@@ -22,8 +22,11 @@ const Intro = () => {
       </div>
       <div className='right'>
         <div className='wrapper'>
-          <h1>LG Painting Services</h1>
-          <h2>PTY LTD</h2>
+          <h1>You Are Covered</h1>
+          <p>
+            We are licence bonded and insured that our work is covered. You will
+            get the best result in your business or home with Peace of mind.
+          </p>
           <h3>
             Our Services
             <span ref={textRef}></span>
