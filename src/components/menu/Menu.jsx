@@ -1,6 +1,5 @@
 import React from 'react';
 import './menu.scss';
-import { Link } from 'react-scroll';
 const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
@@ -24,6 +23,18 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           <a href='#contact'>Contact</a>
         </li>
       </ul>
+      <div className='socials'>
+        <div>
+          <a href='#'>
+            <i class='fab fa-instagram'></i>
+          </a>
+        </div>
+        <div>
+          <a href='#'>
+            <i class='fab fa-facebook'></i>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

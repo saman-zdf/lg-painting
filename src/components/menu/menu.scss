@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   transition: all 1s ease;
+  text-align: center;
   &.active {
     right: 0;
   }
@@ -34,6 +35,24 @@
       }
       &:hover {
         font-weight: 500;
+      }
+    }
+  }
+  .socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      margin: 15px;
+      i {
+        color: #fff;
+        transition: all 0.5s ease;
+        font-size: 25px;
+        &:hover {
+          color: $secondaryColor;
+        }
       }
     }
   }
