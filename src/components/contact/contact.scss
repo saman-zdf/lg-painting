@@ -1,6 +1,7 @@
 @import '../../global.scss';
 .contact {
-  background-color: $blueColor;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../../assets/images-2/25.jpg') no-repeat center/cover;
   display: flex;
   height: 100vh;
   @include mobile {
@@ -70,23 +71,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      padding: 40px 0;
+    }
 
     h2 {
       font-size: 30px;
+      color: #fff;
+      margin: 10px 0;
     }
 
     form {
-      width: 70%;
+      width: 50%;
       height: 70%;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
       font-family: inherit;
+      background: #eee;
+      @include mobile {
+        width: 70%;
+        height: 90%;
+      }
       input {
         width: 300px;
         height: 30px;
         font-size: 14px;
+        padding: 14px;
+        border: none;
         @include mobile {
           width: 180px;
           height: 25px;
@@ -94,18 +107,21 @@
       }
       textarea {
         width: 300px;
+        border: none;
         height: 200px;
         font-size: 12;
+        padding: 14px;
         @include mobile {
           width: 180px;
           height: 50px;
         }
       }
       button {
-        width: 150px;
-        height: 30px;
-        color: #555;
-        background-color: #fff;
+        width: 200px;
+
+        padding: 15px;
+        color: #fff;
+        background-color: $blueColor;
         border: none;
         font-size: 15px;
         border-radius: 10px;
@@ -115,7 +131,7 @@
         }
       }
       span {
-        color: #fff;
+        color: #555;
       }
     }
   }
