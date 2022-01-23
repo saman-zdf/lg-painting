@@ -20,7 +20,7 @@ const Portfolio = () => {
     },
     {
       id: 'industrial',
-      title: 'Insudtrial',
+      title: 'Industrial',
     },
   ];
 
