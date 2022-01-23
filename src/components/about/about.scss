@@ -73,7 +73,14 @@
     .about-sub {
       margin: 20px 0;
     }
+    .desc-lead {
+      font-size: 18px;
 
+      @include mobile {
+        font-size: 15px;
+        max-width: 400px;
+      }
+    }
     .about-desc {
       max-width: 600px;
       font-size: 20px;
