@@ -12,15 +12,13 @@ const About = () => {
       </div>
       <div className='about-right'>
         <h1 className='about-title'>About Me</h1>
+        <div className='divider'></div>
         <p className='about-desc'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           impedit soluta esse aliquid! Numquam rerum quis aspernatur laudantium
           iure error sit, ipsum voluptas laboriosam illo, ratione nihil ea a
           nesciunt corporis vero dolore iste doloribus quod adipisci
-          voluptatibus facilis tenetur. Voluptates sunt ea modi enim nulla rem
-          consequuntur illum at?Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. In, harum! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quis, ut.
+          voluptatibus facilis tenetur.
         </p>
       </div>
     </div>
