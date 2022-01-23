@@ -32,9 +32,9 @@ const Intro = () => {
             <span ref={textRef}></span>
           </h3>
         </div>
-        <a href='#portfolio'>
+        {/* <a href='#portfolio'>
           <img src={down} alt='down' />
-        </a>
+        </a> */}
       </div>
     </div>
   );
