@@ -1,114 +1,107 @@
-export const featuredPortfolio = [
+import interior1 from './assets/images-2/25.jpg';
+import interior2 from './assets/images-2/26.jpg';
+import interior3 from './assets/images-2/34.jpg';
+import interior4 from './assets/images-2/44.jpg';
+import exteriro1 from './assets/images-2/2.jpg';
+import exteriro2 from './assets/images-2/12.jpg';
+import exteriro3 from './assets/images-2/31.jpg';
+import exteriro4 from './assets/images-2/36.jpg';
+import commercial1 from './assets/images-2/25.jpg';
+import commercial2 from './assets/images-2/16.jpg';
+import commercial3 from './assets/images-2/17.jpg';
+import commercial4 from './assets/images-2/af-1.jpg';
+import industrial1 from './assets/images-2/28.jpg';
+import industrial2 from './assets/images-2/17.jpg';
+import industrial3 from './assets/images-2/af-1.jpg';
+import industrial4 from './assets/images-2/31.jpg';
+export const interior = [
   {
     id: 1,
-    title: 'Social Media App',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+
+    img: interior1,
   },
   {
     id: 2,
-    title: 'Rampa UI Design',
-    img: 'https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900',
+
+    img: interior2,
   },
   {
     id: 3,
-    title: 'E-commerce Web Design',
-    img: 'https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900',
+
+    img: interior3,
   },
   {
     id: 4,
-    title: 'Relax Mobile App',
-    img: 'https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900',
+
+    img: interior4,
   },
 ];
 
-export const webPortfolio = [
+export const exterior = [
   {
     id: 1,
-    title: 'Web Social Media App',
-    img: 'https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900',
+
+    img: exteriro1,
   },
   {
     id: 2,
-    title: 'Web Rampa UI Design',
-    img: 'https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900',
+
+    img: exteriro2,
   },
   {
     id: 3,
-    title: 'Web E-commerce Design',
-    img: 'https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900',
+
+    img: exteriro3,
   },
   {
     id: 4,
-    title: 'Web Relax App',
-    img: 'https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900',
+
+    img: exteriro4,
   },
 ];
 
-export const mobilePortfolio = [
+export const commercial = [
   {
     id: 1,
-    title: 'Mobile Social Media App',
-    img: 'https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900',
+
+    img: commercial1,
   },
   {
     id: 2,
-    title: 'Mobile Rampa UI Design',
-    img: 'https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900',
+
+    img: commercial2,
   },
   {
     id: 3,
-    title: 'Mobile E-commerce Design',
-    img: 'https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900',
+
+    img: commercial3,
   },
   {
     id: 4,
-    title: 'Mobile Relax App',
-    img: 'https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900',
+
+    img: commercial4,
   },
 ];
 
-export const designPortfolio = [
+export const industrial = [
   {
     id: 1,
-    title: 'Design Social Media App',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
-  },
-  {
-    id: 2,
-    title: 'Design Rampa UI Design',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
-  },
-  {
-    id: 3,
-    title: 'Design E-commerce Web Design',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
-  },
-  {
-    id: 4,
-    title: 'Design Relax Mobile App',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
-  },
-];
 
-export const contentPortfolio = [
-  {
-    id: 1,
-    title: 'Content Social Media App',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+    img: industrial1,
   },
   {
     id: 2,
-    title: 'Content Rampa UI Design',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+
+    img: industrial2,
   },
   {
     id: 3,
-    title: 'Content E-commerce Web Design',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+
+    img: industrial3,
   },
   {
     id: 4,
-    title: 'Content Relax Mobile App',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU',
+
+    img: industrial4,
   },
 ];

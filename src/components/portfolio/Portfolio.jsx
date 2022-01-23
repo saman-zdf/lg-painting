@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './portfolio.scss';
-import ManPaintLadder from '../../assets/images/man-paint-ladder.jpg';
 import PortfolioList from '../portfolioList/PortfolioList';
-import {
-  featuredPortfolio,
-  webPortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from '../../data';
+import { interior, exterior, commercial, industrial } from '../../data';
 const Portfolio = () => {
   const [selected, setSelected] = useState('interior');
   const [data, setData] = useState([]);
@@ -25,7 +19,7 @@ const Portfolio = () => {
       title: 'Commercial',
     },
     {
-      id: 'insudtrial',
+      id: 'industrial',
       title: 'Insudtrial',
     },
   ];
@@ -33,26 +27,27 @@ const Portfolio = () => {
   useEffect(() => {
     switch (selected) {
       case 'interior':
-        setData(featuredPortfolio);
+        setData(interior);
         break;
       case 'exterior':
-        setData(webPortfolio);
+        setData(exterior);
         break;
       case 'commercial':
-        setData(designPortfolio);
+        setData(commercial);
         break;
       case 'industrial':
-        setData(contentPortfolio);
+        setData(industrial);
         break;
 
       default:
-        setData(featuredPortfolio);
+        setData(interior);
         break;
     }
   }, [selected]);
   return (
     <div className='portfolio' id='portfolio'>
-      <h1>Recent Work</h1>
+      <h1>Our Works</h1>
+      <div className='divider'></div>
       <ul>
         {list.map((item) => {
           return (
@@ -69,7 +64,6 @@ const Portfolio = () => {
         {data.map((item) => (
           <div className='item' key={item.id}>
             <img src={item.img} alt={item.title} />
-            {/* <h3>{item.title}</h3> */}
           </div>
         ))}
       </div>
