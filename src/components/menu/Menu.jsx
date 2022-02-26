@@ -1,26 +1,87 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './menu.scss';
 const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={'menu ' + (menuOpen && 'active')}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <a href='#intro'>Home</a>
+          <Link
+            to='intro'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+            className='link'
+          >
+            Home
+          </Link>
+          {/* <a href='#intro'>Home</a> */}
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href='#about'>About</a>
+          <Link
+            to='about'
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={1000}
+            className='link'
+          >
+            About
+          </Link>
+          {/* <a href='#about'>About</a> */}
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href='#portfolio'>Portfolio</a>
+          <Link
+            to='portfolio'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+            className='link'
+          >
+            Portfolio
+          </Link>
+          {/* <a href='#portfolio'>Portfolio</a> */}
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href='#works'>Works</a>
+          <Link
+            to='works'
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={1000}
+            className='link'
+          >
+            Works
+          </Link>
+          {/* <a href='#works'>Works</a> */}
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href='#testimonials'>Testimonials</a>
+          <Link
+            to='testimonials'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+            className='link'
+          >
+            Testimonials
+          </Link>
+          {/* <a href='#testimonials'>Testimonials</a> */}
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href='#contact'>Contact</a>
+          <Link
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+            className='link'
+          >
+            Contact
+          </Link>
+          {/* <a href='#contact'>Contact</a> */}
         </li>
       </ul>
       <div className='socials'>

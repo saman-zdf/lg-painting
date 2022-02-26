@@ -11,19 +11,29 @@ import About from './components/about/About';
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className='app'>
+    <>
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className='sections'>
-        <Intro />
-        <About />
-        <Portfolio />
-        <Works />
-        <Testimonials />
-        <Contact />
-      </div>
-    </div>
+      <Intro />
+      <About />
+      <Portfolio />
+      <Works />
+      <Testimonials />
+      <Contact />
+    </>
   );
 };
+//  <div className='app'>
+//    <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+//    <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+//    <div className='sections'>
+//      <Intro />
+//      <About />
+//      <Portfolio />
+//      <Works />
+//      <Testimonials />
+//      <Contact />
+//    </div>
+//  </div>;
 
 export default App;
