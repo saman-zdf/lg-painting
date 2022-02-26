@@ -43,7 +43,11 @@ const Works = () => {
   ];
   useEffect(() => {
     const timeout = setTimeout(
-      () => setCurrentSlide((currentSlide + 1 + data.length) % data.length),
+      () =>
+        setCurrentSlide(
+          (currentSlide === data.length ? 0 : currentSlide + 1 + data.length) %
+            data.length
+        ),
       5000
     );
     return () => clearTimeout(timeout);

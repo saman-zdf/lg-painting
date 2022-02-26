@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './intro.scss';
-import image from '../../assets/images/IMG_2330.jpg';
+import image from '../../assets/images/test3.png';
 import down from '../../assets/images/down.png';
+import bg from '../../assets/images/bgTest4.jpg';
 import { init } from 'ityped';
 const Intro = () => {
   const textRef = useRef();
@@ -15,6 +16,7 @@ const Intro = () => {
   }, []);
   return (
     <div className='intro' id='intro'>
+      {/* <img src={bg} alt='' className='bg' /> */}
       <div className='left'>
         <div className='imgContainer'>
           <img src={image} alt='hero' />

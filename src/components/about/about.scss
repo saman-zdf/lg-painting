@@ -3,7 +3,7 @@
   display: flex;
   height: 100vh;
   align-items: center;
-  background-color: rgba(175, 244, 255, 0.231);
+  background-color: rgba(185, 240, 255, 0.2);
   // background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
   //   url('../../assets/images/about-bg.jpg');
   @include mobile {
@@ -21,14 +21,14 @@
     .about-card.bg {
       position: absolute;
       top: 50px;
-      left: 50px;
+      left: 10px;
       background-color: rgba(0, 0, 0, 0.1);
       @include mobile {
         display: none;
       }
     }
     .about-card {
-      width: 80%;
+      width: 90%;
       height: 70vh;
       border-radius: 30px;
       position: relative;
@@ -60,6 +60,7 @@
         margin-top: 2px;
       }
     }
+
     .divider {
       width: 200px;
       background-color: $secondaryColor;
@@ -74,7 +75,7 @@
       margin: 20px 0;
     }
     .desc-lead {
-      font-size: 18px;
+      font-size: 22px;
 
       @include mobile {
         font-size: 15px;

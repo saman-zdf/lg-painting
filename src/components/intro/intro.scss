@@ -1,15 +1,26 @@
 @import '../../global.scss';
 .intro {
   height: 100vh;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-    url('../../assets/images/bg-1.jpg');
+  background: url('../../assets/images/newBg.jpg');
+  background-size: 80%;
+  background-position: right;
 
+  // .bg {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
   @include mobile {
     flex-direction: column;
     align-items: center;
+    background: none;
   }
   background-repeat: no-repeat;
   display: flex;
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -26,11 +37,12 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      z-index: 2;
 
       img {
-        width: 80%;
-        border-radius: 40px;
+        width: 100%;
         display: block;
+        margin-left: -50px;
         @include mobile {
           width: 50%;
           margin: 10px auto;
@@ -49,15 +61,18 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      color: #fff;
+      color: #333;
+      margin-left: 200px;
       @include mobile {
         padding-left: 0;
+        margin-left: 0;
+
         align-items: center;
       }
       h1 {
         font-size: 45px;
         margin: 10px 0;
-        font-weight: 400;
+        font-weight: bold;
         @include mobile {
           font-size: 30px;
           text-align: center;
@@ -68,6 +83,7 @@
         font-size: 25px;
         max-width: 600px;
         margin-bottom: 20px;
+        font-weight: 500;
         @include mobile {
           font-size: 18px;
           text-align: center;
@@ -79,7 +95,7 @@
         font-weight: 400;
         span {
           font-size: inherit;
-          color: rgb(0, 214, 218);
+          color: rgb(0, 11, 130);
         }
         @include mobile {
           font-size: 20px;

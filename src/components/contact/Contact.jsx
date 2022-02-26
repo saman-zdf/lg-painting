@@ -20,12 +20,9 @@ const Contact = () => {
     <Element name='contact'>
       <div className='contact'>
         <div className='left'>
-          <div className='imgContainer'>
-            <img src={shake} alt='' />
-          </div>
           <div className='itemContainer'>
             <i className='fas fa-envelope icon'></i>
-            <span>lgpaintingservices@gmail.com</span>
+            <span>lg.paintingservices@yahoo.com</span>
           </div>
           <div className='itemContainer'>
             <i className='fas fa-phone-alt'></i>
