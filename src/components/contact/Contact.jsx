@@ -48,9 +48,27 @@ const Contact = () => {
             <i className='fas fa-phone-alt'></i>
             <span>
               <a href='tel:+61416608482' className='phone'>
-                +61416608482 Click Here To Call
+                0416608482 Click Here To Call
               </a>
             </span>
+          </div>
+          <div className='socials'>
+            <div>
+              <a
+                href='https://www.instagram.com/lg.painting.services'
+                target='_blank'
+              >
+                <i class='fab fa-instagram'></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href='https://m.facebook.com/LG.Painting.Services/'
+                target='_blank'
+              >
+                <i class='fab fa-facebook'></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className='right'>

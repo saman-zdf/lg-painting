@@ -94,7 +94,10 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           </a>
         </div>
         <div>
-          <a href='#'>
+          <a
+            href='https://m.facebook.com/LG.Painting.Services/'
+            target='_blank'
+          >
             <i class='fab fa-facebook'></i>
           </a>
         </div>
