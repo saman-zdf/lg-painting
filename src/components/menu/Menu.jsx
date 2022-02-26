@@ -40,7 +40,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             duration={1000}
             className='link'
           >
-            Portfolio
+            Works
           </Link>
           {/* <a href='#portfolio'>Portfolio</a> */}
         </li>
@@ -53,7 +53,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
             duration={1000}
             className='link'
           >
-            Works
+            Results
           </Link>
           {/* <a href='#works'>Works</a> */}
         </li>

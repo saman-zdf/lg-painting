@@ -1,13 +1,32 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './contact.scss';
 import { Element } from 'react-scroll';
-import shake from '../../assets/images/shake.svg';
+import emailJs from '@emailjs/browser';
 const Contact = () => {
   const [message, setMessage] = useState(false);
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
     setMessage(true);
+
+    emailJs
+      .sendForm(
+        'service_bwvfygi',
+        'template_tko0r3h',
+        form.current,
+        '0rI_QsMprUTjiz3id'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+
   useEffect(() => {
     let timer = setTimeout(() => {
       setMessage(false);
@@ -16,6 +35,7 @@ const Contact = () => {
       clearTimeout(timer);
     };
   }, [message]);
+
   return (
     <Element name='contact'>
       <div className='contact'>
@@ -35,12 +55,14 @@ const Contact = () => {
         </div>
         <div className='right'>
           <h2>Contact Me</h2>
-          <form onSubmit={handleSubmit}>
-            <input type='text' placeholder='Name' name='email' />
-            <input type='email' placeholder='Email' name='email' />
-            <input type='text' placeholder='Phone No.' name='text' />
+          <form onSubmit={sendEmail} ref={form}>
+            <input type='text' placeholder='Name' name='user_name' />
+            <input type='email' placeholder='Email' name='user_email' />
+            <input type='text' placeholder='Phone No.' name='user_phone' />
             <textarea name='message' placeholder='Message'></textarea>
-            <button type='submit'>Send</button>
+            <button type='submit' name='submit' value='send'>
+              Send
+            </button>
             {message && (
               <span>Thanks for your message, I will reply very soon :)</span>
             )}

@@ -1,11 +1,17 @@
 @import '../../global.scss';
 .works {
-  background: #eeeeee;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 100vh;
+  background: rgb(224, 249, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(224, 249, 255, 1) 0%,
+    rgba(201, 252, 251, 1) 79%,
+    rgb(155, 238, 255) 100%
+  );
   h2 {
     font-size: 40px;
     color: #555;

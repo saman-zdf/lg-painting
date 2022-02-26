@@ -1,6 +1,11 @@
 @import '../../global.scss';
 .portfolio {
-  background-color: #fff;
+  background: rgb(167, 239, 255);
+  background: radial-gradient(
+    circle,
+    rgba(167, 239, 255, 1) 0%,
+    rgba(230, 254, 254, 1) 56%
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
